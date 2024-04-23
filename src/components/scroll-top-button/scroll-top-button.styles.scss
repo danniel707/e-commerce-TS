@@ -1,0 +1,29 @@
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 2em;
+  right: 4em;
+  background-color: white;
+  color: black;
+  border: solid 2px black;
+  border-radius: 50%;
+  font-size: 2em;
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  
+
+  &.visible {
+    display: flex;
+  }
+
+  &:hover {
+     transform: scale(1.1);
+     transition: transform 0.5s ;
+
+
+  }
+}
