@@ -31,7 +31,7 @@ const Navigation = () => {
           <img src="../../../logo.png" alt="brand" />
         </Logo>
         <Brand to='/'>
-         
+          <img src="../../../brand_name.png" alt="brand" />  
         </Brand>
         <NavLinks>
           <NavLink to='/shop'>

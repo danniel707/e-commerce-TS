@@ -20,12 +20,21 @@ export const NavigationContainer = styled.div`
 
 export const Logo = styled(Link)`
   margin-top: 2px;
-  margin-left: 30px;  
+  margin-left: 30px;
+
+  img {
+   width: 70px; 
+  }
+    
 `
 
 export const Brand = styled(Link)`  
   margin-top: 5px;
   margin-left: 460px;
+
+  img {
+    width: 220px;
+  }
 
 `
 
