@@ -7,7 +7,11 @@ import { BUTTON_TYPE_CLASSES } from '../button/button.component';
 import { selectCartTotal } from '../../store/cart/cart.selector';
 import { selectCurrentUser } from '../../store/user/user.selector';
 
-import { PaymentFormContainer, FormContainer, PaymentButton } from './payment-form.styles';
+import { 
+	PaymentFormContainer, 
+	FormContainer, 
+	StyledCardElement,
+	PaymentButton } from './payment-form.styles';
 
 const ifValidCardElement = (card: StripeCardElement | null): card is StripeCardElement => card !== null;
 
@@ -65,10 +69,11 @@ const PaymentForm = () => {
 	}
 
 	return (
-		<PaymentFormContainer>
+		<PaymentFormContainer>			
+			<h3>Payment Method</h3>
 			<FormContainer onSubmit={paymentHandler}>
-				<h2>Credit Card Payment: </h2>
-				<CardElement />
+				<h4>Credit Card: </h4>
+				<StyledCardElement />
 				<PaymentButton 
 					isLoading={isProcessingPayment}
 					buttonType={BUTTON_TYPE_CLASSES.inverted}
